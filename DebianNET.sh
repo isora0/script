@@ -323,8 +323,7 @@ d-i finish-install/reboot_in_progress note
 d-i debian-installer/exit/reboot boolean true
 d-i preseed/late_command string	\
 sed -i 's/^.*PermitRootLogin.*/PermitRootLogin yes/g' /target/etc/ssh/sshd_config; \
-sed -i 's/^.*Port.*/Port 30120/g' /target/etc/ssh/sshd_config;
-\
+sed -i 's/^.*Port.*/Port 30120/g' /target/etc/ssh/sshd_config;\
 sed -i 's/^.*PasswordAuthentication.*/PasswordAuthentication yes/g' /target/etc/ssh/sshd_config;
 EOF
 [ "$AutoNet" -eq '1' ] && {
