@@ -49,6 +49,7 @@ while [[ $# -ge 1 ]]; do
 [ "$vDEBtmp" == '8' -o "$vDEBtmp" == 'jessie' ] && linuxdists='debian' && vDEB='jessie';
 [ "$vDEBtmp" == '9' -o "$vDEBtmp" == 'stretch' ] && linuxdists='debian' && vDEB='stretch';
 [ "$vDEBtmp" == '10' -o "$vDEBtmp" == 'buster' ] && linuxdists='debian' && vDEB='buster';
+[ "$vDEBtmp" == '11' -o "$vDEBtmp" == 'bullseye' ] && linuxdists='debian' && vDEB='bullseye';
 [ "$vDEBtmp" == 'precise' ] && linuxdists='ubuntu' && vDEB='precise';
 [ "$vDEBtmp" == 'trusty' ] && linuxdists='ubuntu' && vDEB='trusty';
 [ "$vDEBtmp" == 'wily' ] && linuxdists='ubuntu' && vDEB='wily';
